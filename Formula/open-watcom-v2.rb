@@ -5,9 +5,9 @@ class OpenWatcomV2 < Formula
   head "https://github.com/open-watcom/open-watcom-v2.git"
 
   stable do
-    url "https://github.com/open-watcom/open-watcom-v2/archive/refs/tags/2021-08-01-Build.tar.gz"
-    version "2.0-2021-08-01"
-    sha256 "3971d6dbbdb859547f7392edd336a1896db8f93f108a2756d69207a38de4cb82"
+    url "https://github.com/open-watcom/open-watcom-v2/archive/2026-06-01-Build.tar.gz"
+    version "2.0-2026-06-01"
+    sha256 "f876034fae915bcaacce0a4c4d06cd73b4ac91c644127faa416ede9518f56569"
   end
 
   bottle do
