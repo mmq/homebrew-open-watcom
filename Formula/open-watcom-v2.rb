@@ -21,7 +21,7 @@ class OpenWatcomV2 < Formula
 
   keg_only "you should use a script to set up your dev environment"
 
-  depends_on "dosbox" => :build
+  depends_on "dosbox-x" => :build
 
   def install
     ENV.deparallelize # race conditions in bld/wmake/posmake
@@ -29,7 +29,7 @@ class OpenWatcomV2 < Formula
     # set the source root
     inreplace "setvars.sh", "export OWROOT=$(realpath `pwd`)", "export OWROOT=#{buildpath}"
 
-    ENV["OWDOSBOX"] = "dosbox"
+    ENV["OWDOSBOX"] = "dosbox-x"
 
     # set the install root
     ENV["OWRELROOT"] = prefix
