@@ -8,10 +8,8 @@ class OpenWatcomV2 < Formula
   head "https://github.com/open-watcom/open-watcom-v2.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/btb/homebrew-open-watcom/releases/download/open-watcom-v2-2.0-2021-08-01"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina:     "0a100d7bcd7cb1c8f8c55bf346abbb00f21e3ee192ffaf0cc906001b61cc627b"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "56f7d87d889f80d7c26f94f4dbf47393bdafd1fa67729c38abcbf0289a13582e"
+    root_url "https://github.com/mmq/homebrew-open-watcom/releases/download/open-watcom-v2-2.0-2026-06-01"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "6a6f717c619b815fb6a48331e0696206357c52355d0205aaf1d7e7dbf2944f21"
   end
 
   env :std
